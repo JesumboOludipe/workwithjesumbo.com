@@ -73,24 +73,13 @@
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
     />
 
-    <!-- ===================================================================
-     SITE CONFIG  -  the only two lines you ever need to edit
-     PIXEL_ID       your Meta Pixel ID (Events Manager > Data sources).
-                    Leave empty and no tracking loads at all.
-     FORM_ENDPOINT  where the enquiry form posts. Two supported options:
-                      Web3Forms  https://api.web3forms.com/submit  (also set WEB3FORMS_KEY)
-                      Formspree  https://formspree.io/f/yourFormId
-                    Leave empty and the form falls back to opening the
-                    visitor's email app, exactly as it did before.
-     =================================================================== -->
+    <!-- Site configuration -->
     <script>
       window.SITE_CONFIG = {
         PIXEL_ID: "",
         FORM_ENDPOINT: "https://api.web3forms.com/submit",
         WEB3FORMS_KEY: "0127ffaf-5c7f-42fc-95e0-54acbe1e78e3",
         THANKS_URL: "/thanks.html",
-        /* UK and EU law needs consent before tracking cookies load.
-       Set to false only if you never advertise to UK or EU visitors. */
         REQUIRE_COOKIE_CONSENT: true,
       };
       window.loadPixel = function () {
