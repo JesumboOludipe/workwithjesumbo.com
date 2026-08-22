@@ -1,13 +1,111 @@
-<title>Spreadsheet Automation Studio</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Custom Excel, Power Query and VBA automation that gives your team back hours every week. Fixed-price builds and monthly care plans.">
+<title>Excel &amp; Google Sheets Automation for Business | Jesumbo</title>
+<meta name="description" content="Custom Excel, Google Sheets and Power Query automation that gives your team back hours every week. Fixed-price builds and monthly care plans, from a Microsoft-certified specialist.">
+<link rel="canonical" href="https://workwithjesumbo.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Jesumbo O.">
+<meta name="theme-color" content="#0B6E57" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A100E" media="(prefers-color-scheme: dark)">
+
+<!-- icons -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B6E57'/%3E%3Ctext x='32' y='44' font-family='monospace' font-size='30' font-weight='700' fill='%23fff' text-anchor='middle'%3Efx%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- social preview -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jesumbo Automation">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://workwithjesumbo.com/">
+<meta property="og:title" content="Stop losing hours to manual spreadsheets.">
+<meta property="og:description" content="Custom Excel, Google Sheets and Power Query automation that gives your team back hours every week. Fixed-price builds and monthly care plans, from a Microsoft-certified specialist.">
+<meta property="og:image" content="https://workwithjesumbo.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jesumbo Spreadsheet Automation: stop losing hours to manual spreadsheets.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stop losing hours to manual spreadsheets.">
+<meta name="twitter:description" content="Custom Excel, Google Sheets and Power Query automation that gives your team back hours every week. Fixed-price builds and monthly care plans, from a Microsoft-certified specialist.">
+<meta name="twitter:image" content="https://workwithjesumbo.com/og-image.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
 
+<!-- ===================================================================
+     SITE CONFIG  -  the only two lines you ever need to edit
+     PIXEL_ID       your Meta Pixel ID (Events Manager > Data sources).
+                    Leave empty and no tracking loads at all.
+     FORM_ENDPOINT  where the enquiry form posts. Two supported options:
+                      Web3Forms  https://api.web3forms.com/submit  (also set WEB3FORMS_KEY)
+                      Formspree  https://formspree.io/f/yourFormId
+                    Leave empty and the form falls back to opening the
+                    visitor's email app, exactly as it did before.
+     =================================================================== -->
+<script>
+  window.SITE_CONFIG = {
+    PIXEL_ID: '',
+    FORM_ENDPOINT: '',
+    WEB3FORMS_KEY: '',
+    THANKS_URL: '/thanks.html',
+    /* UK and EU law needs consent before tracking cookies load.
+       Set to false only if you never advertise to UK or EU visitors. */
+    REQUIRE_COOKIE_CONSENT: true
+  };
+  window.loadPixel = function () {
+    var c = window.SITE_CONFIG;
+    if (!c.PIXEL_ID || window.fbq) return;
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', c.PIXEL_ID);
+    fbq('track', 'PageView');
+  };
+  (function (c) {
+    if (!c.PIXEL_ID) return;
+    if (!c.REQUIRE_COOKIE_CONSENT) { window.loadPixel(); return; }
+    var choice = null;
+    try { choice = localStorage.getItem('cookie-consent'); } catch (e) {}
+    if (choice === 'accepted') window.loadPixel();
+  })(window.SITE_CONFIG);
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Jesumbo Spreadsheet Automation",
+  "url": "https://workwithjesumbo.com/",
+  "image": "https://workwithjesumbo.com/og-image.png",
+  "description": "Custom Excel, Google Sheets and Power Query automation that gives your team back hours every week. Fixed-price builds and monthly care plans, from a Microsoft-certified specialist.",
+  "email": "hello@workwithjesumbo.com",
+  "telephone": "+44-7542-313713",
+  "priceRange": "$$",
+  "areaServed": "Worldwide",
+  "address": { "@type": "PostalAddress", "addressLocality": "Reading", "addressCountry": "GB" },
+  "founder": { "@type": "Person", "name": "Jesumbo O.", "jobTitle": "Spreadsheet Automation Specialist" },
+  "sameAs": ["https://www.upwork.com/freelancers/jbjb"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Automation packages",
+    "itemListElement": [
+      { "@type": "Offer", "name": "Automation Audit", "price": "299", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Dashboard & Reporting build", "price": "1000", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Workflow Automation build", "price": "2500", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Monthly Care Plan", "price": "350", "priceCurrency": "USD" }
+    ]
+  }
+}
+</script>
+
 <style>
   :root {
-    /* light palette — cool neutral biased toward emerald accent */
+    /* light palette: cool neutral biased toward emerald accent */
     --bg: #F3F6F4;
     --surface: #FFFFFF;
     --surface-2: #EEF3F0;
@@ -64,6 +162,8 @@
     --shadow-lift: 0 2px 6px rgba(0,0,0,.5), 0 22px 60px rgba(0,0,0,.6);
   }
 
+  .skip { position:absolute; left:-9999px; top:0; z-index:100; background:var(--accent); color:#fff; padding:12px 18px; border-radius:0 0 10px 0; font-weight:600; }
+  .skip:focus { left:0; }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -126,8 +226,7 @@
     white-space: nowrap;
   }
   .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 6px 18px rgba(11,110,87,.28); }
-  :root[data-theme="dark"] .btn-primary,
-  :root:not([data-theme="light"]) .btn-primary { color: #05130E; }
+  :root[data-theme="dark"] .btn-primary { color: #05130E; }
   @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .btn-primary{ color:#05130E; } }
   .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(11,110,87,.34); }
   .btn-ghost { background: transparent; color: var(--ink); border-color: var(--hairline-strong); }
@@ -153,7 +252,7 @@
     display:grid; place-items:center; font-family:"JetBrains Mono",monospace; font-weight:600; font-size:14px;
     box-shadow: inset 0 0 0 1px rgba(255,255,255,.18);
   }
-  :root[data-theme="dark"] .brand .glyph, :root:not([data-theme="light"]) .brand .glyph { color:#05130E; }
+  :root[data-theme="dark"] .brand .glyph { color:#05130E; }
   @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .brand .glyph{ color:#05130E; } }
   .nav-links { display: flex; align-items: center; gap: 28px; }
   .nav-links a.link { color: var(--muted); font-weight: 500; font-size: 15px; transition: color .15s; }
@@ -165,6 +264,12 @@
   }
   .theme-toggle:hover { color: var(--ink); border-color: var(--hairline-strong); }
   @media (max-width: 860px){ .nav-links a.link { display:none; } }
+  @media (max-width: 480px){
+    .brand .sfx { display:none; }
+    .nav-links { gap: 10px; }
+    .nav-links .btn { padding: 11px 17px; font-size: 15px; }
+    .wrap { padding: 0 18px; }
+  }
 
   /* hero */
   .hero { padding-top: 74px; padding-bottom: 40px; overflow: hidden; }
@@ -261,7 +366,7 @@
     font-family:"JetBrains Mono",monospace; font-size:11px; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
     padding:5px 11px; border-radius:999px;
   }
-  :root[data-theme="dark"] .card.feature .flag, :root:not([data-theme="light"]) .card.feature .flag { color:#05130E; }
+  :root[data-theme="dark"] .card.feature .flag { color:#05130E; }
   @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .card.feature .flag{color:#05130E;} }
   .card h3 { font-size: 22px; margin-top: 10px; }
   .card .price { font-family:"Bricolage Grotesque",sans-serif; font-weight:800; font-size: 38px; letter-spacing:-0.03em; margin-top: 14px; display:flex; align-items:baseline; gap:6px; }
@@ -304,7 +409,7 @@
   @media (max-width: 860px){ .about-grid { grid-template-columns:1fr; gap:30px; } }
   .about-card { background: var(--surface); border:1px solid var(--hairline); border-radius: var(--radius); padding: 30px; box-shadow: var(--shadow); }
   .about-card .avatar { width:64px; height:64px; border-radius:14px; background: var(--accent); color:#fff; display:grid; place-items:center; font-family:"Bricolage Grotesque",sans-serif; font-weight:800; font-size:24px; }
-  :root[data-theme="dark"] .about-card .avatar, :root:not([data-theme="light"]) .about-card .avatar { color:#05130E; }
+  :root[data-theme="dark"] .about-card .avatar { color:#05130E; }
   @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .about-card .avatar{color:#05130E;} }
   .about-card h3 { font-size: 21px; margin-top:16px; }
   .about-card .role { font-family:"JetBrains Mono",monospace; font-size:13px; color:var(--muted); margin-top:5px; }
@@ -353,43 +458,33 @@
   .foot-inner a { color:var(--muted); }
   .foot-inner a:hover { color:var(--ink); }
 
-  /* builder note banner */
-  .buildnote {
-    background: var(--accent-tint); border-bottom:1px solid var(--hairline);
-    font-family:"JetBrains Mono",monospace; font-size:12.5px; color:var(--accent-strong); text-align:center; padding:9px 16px;
+  /* cookie consent bar */
+  .cookiebar {
+    position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 90;
+    background: var(--surface); border: 1px solid var(--hairline-strong); border-radius: var(--radius);
+    box-shadow: var(--shadow-lift); padding: 18px 22px;
+    display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: center; justify-content: space-between;
+    max-width: 760px; margin: 0 auto;
   }
-  :root[data-theme="dark"] .buildnote, :root:not([data-theme="light"]) .buildnote { color: var(--accent); }
-  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .buildnote{color:var(--accent);} }
-  .buildnote b { font-weight:600; }
+  .cookiebar[hidden] { display: none; }
+  .cookiebar p { font-size: 14.5px; color: var(--ink-soft); flex: 1 1 300px; }
+  .cookiebar a { color: var(--accent); font-weight: 600; }
+  .cookiebar-btns { display: flex; gap: 10px; }
+  .cookiebar .btn { padding: 10px 20px; font-size: 15px; }
 </style>
+</head>
 
-<div class="buildnote">Before ads: turn on Cloudflare <b>Email Routing</b> so hello@workwithjesumbo.com reaches your inbox, and add your <b>Meta Pixel ID</b> (see the note just below in the code)</div>
+<body>
 
-<!-- =====================================================================
-     META (FACEBOOK) PIXEL  —  READY FOR ADS
-     Before running Facebook ads, deploy this page to YOUR OWN DOMAIN, then
-     paste your Pixel ID below and REMOVE the surrounding comment markers.
-     (A pixel only tracks on your real domain — not on this preview link.)
-     A "Lead" event already fires when someone submits the form or books a
-     call, so your ad will optimise for real enquiries automatically.
 
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'YOUR_PIXEL_ID');   // <-- paste your Pixel ID here
-    fbq('track', 'PageView');
-  </script>
 
-     ===================================================================== -->
+<a class="skip" href="#top">Skip to content</a>
 
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="#top" aria-label="Home">
       <span class="glyph">fx</span>
-      <span>Jesumbo&nbsp;<span style="color:var(--muted);font-weight:500">· Automation</span></span>
+      <span>Jesumbo&nbsp;<span class="sfx" style="color:var(--muted);font-weight:500">· Automation</span></span>
     </a>
     <nav class="nav-links">
       <a class="link" href="#problem">Problem</a>
@@ -411,7 +506,7 @@
       <div>
         <span class="eyebrow" data-cell="A1">Excel · Google Sheets · Power Query · Automation</span>
         <h1 class="hero-title">Stop losing hours to <span class="hl">manual spreadsheets.</span></h1>
-        <p class="hero-sub">I build custom Excel and Google Sheets automations that do your repetitive reporting, data cleaning and admin for you — so the work that eats a day now runs in a click.</p>
+        <p class="hero-sub">I build custom Excel and Google Sheets automations that do your repetitive reporting, data cleaning and admin for you, so the work that eats a day now runs in a click.</p>
         <div class="hero-cta">
           <a class="btn btn-primary btn-lg" href="#contact">Get a free quote</a>
           <a class="btn btn-ghost btn-lg" href="#pricing">See packages &amp; prices</a>
@@ -470,7 +565,7 @@
       <div class="prob">
         <div class="ico">≠</div>
         <h3>Numbers that don't tie out</h3>
-        <p>Manual entry means typos, stale figures and version chaos — and decisions made on data nobody fully trusts.</p>
+        <p>Manual entry means typos, stale figures and version chaos, and decisions made on data nobody fully trusts.</p>
       </div>
       <div class="prob">
         <div class="ico">◱</div>
@@ -491,7 +586,7 @@
       <div class="step">
         <div class="num">01</div>
         <h3>Free discovery call</h3>
-        <p>We spend 15 minutes on your process. I tell you honestly what can be automated and what it'll save — no pitch.</p>
+        <p>We spend 30 minutes on your process. I tell you honestly what can be automated and what it'll save. No pitch.</p>
       </div>
       <div class="step">
         <div class="num">02</div>
@@ -512,14 +607,14 @@
     <div class="sec-head center">
       <span class="eyebrow" data-cell="D1">Packages &amp; pricing</span>
       <h2>Clear scope, fixed price.</h2>
-      <p>Start small with an audit, or go straight to a build. Every project is quoted up front — you always know the number before we begin.</p>
+      <p>Start small with an audit, or go straight to a build. Every project is quoted up front, so you always know the number before we begin.</p>
     </div>
     <div class="price-grid">
       <div class="card">
         <span class="tag">Best first step</span>
         <h3>Automation Audit</h3>
         <div class="price"><span class="from">$</span>299</div>
-        <p class="blurb">A deep look at your spreadsheets and process, with a clear plan of what to automate first — and the ROI of doing it.</p>
+        <p class="blurb">A deep look at your spreadsheets and process, with a clear plan of what to automate first, and the ROI of doing it.</p>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Review of your current workflow &amp; files</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Prioritised automation plan + time-saved estimate</li>
@@ -534,10 +629,10 @@
         <span class="tag">Done-for-you build</span>
         <h3>Dashboard &amp; Reporting</h3>
         <div class="price"><span class="from">from $</span>1,000</div>
-        <p class="blurb">Turn your raw exports into a live dashboard or report that refreshes itself — built in Excel, Google Sheets or Power BI with Power Query.</p>
+        <p class="blurb">Turn your raw exports into a live dashboard or report that refreshes itself, built in Excel, Google Sheets or Power BI with Power Query.</p>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Automated data cleaning &amp; consolidation</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> One-click refresh — no more copy-paste</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> One-click refresh, no more copy-paste</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Clear charts &amp; KPIs your team actually uses</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Walkthrough + written guide on handover</li>
         </ul>
@@ -548,19 +643,19 @@
         <span class="tag">End-to-end</span>
         <h3>Workflow Automation</h3>
         <div class="price"><span class="from">from $</span>2,500</div>
-        <p class="blurb">A full repetitive process automated end-to-end with VBA / macros or Power Query — from messy inputs to finished output.</p>
+        <p class="blurb">A full repetitive process automated end-to-end with VBA / macros or Power Query, from messy inputs to finished output.</p>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Custom macros / VBA tools built to your process</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Multi-file &amp; multi-step tasks in one click</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Error checks so bad data can't slip through</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Built to hand off — not stuck in one head</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Built to hand off, not stuck in one head</li>
         </ul>
         <a class="btn btn-ghost" href="#contact">Get a quote</a>
       </div>
     </div>
 
     <div class="price-foot">
-      <strong style="color:var(--ink)">Care Plan — from $350/month.</strong> Ongoing tweaks, small new automations, and priority support once your tools are live. Cancel anytime. &nbsp;·&nbsp; Prices in USD; other currencies on request.
+      <strong style="color:var(--ink)">Care Plan: from $350/month.</strong> Ongoing tweaks, small new automations, and priority support once your tools are live. Cancel anytime. &nbsp;·&nbsp; Prices in USD; other currencies on request.
     </div>
   </div>
 </section>
@@ -570,7 +665,7 @@
     <div class="sec-head">
       <span class="eyebrow" data-cell="E2">Track record</span>
       <h2>Proven, verified, and paid to do this every day.</h2>
-      <p>These aren't projections — they're the numbers on my public Upwork profile, built over years of real client work.</p>
+      <p>These aren't projections. They're the numbers on my public Upwork profile, built over years of real client work.</p>
     </div>
     <div class="stat-grid">
       <div class="stat"><div class="n">100%</div><div class="l">Job success score</div></div>
@@ -581,12 +676,12 @@
 
     <div class="verified">
       <span class="stars">★★★★★</span>
-      <span class="txt"><b>Top Rated Plus</b> — Upwork's highest freelancer tier, held by a small fraction of freelancers.</span>
+      <span class="txt"><b>Top Rated Plus</b>: Upwork's highest freelancer tier, held by a small fraction of freelancers.</span>
       <a href="https://www.upwork.com/freelancers/jbjb" target="_blank" rel="noopener">Read the reviews on Upwork →</a>
     </div>
     <div class="verified" style="margin-top:14px;">
       <span class="stars" style="color:var(--accent);font-size:17px;">✔</span>
-      <span class="txt"><b>Microsoft Certified</b> — Power BI Data Analyst (PL-300) &amp; Azure Fundamentals (AZ-900), with 7+ years working with data every day.</span>
+      <span class="txt"><b>Microsoft Certified</b>: Power BI Data Analyst (PL-300) &amp; Azure Fundamentals (AZ-900), with 7+ years working with data every day.</span>
     </div>
 
     <div style="margin-top:46px;">
@@ -594,7 +689,7 @@
     </div>
     <div class="stat-grid" style="margin-top:18px;">
       <div class="stat"><div class="n">80%↓</div><div class="l">Manual reconciliation time cut with automated, one-click-refresh reporting</div></div>
-      <div class="stat"><div class="n">&lt;24h</div><div class="l">A messy 64-page PDF turned into a clean Excel database — 100% accuracy</div></div>
+      <div class="stat"><div class="n">&lt;24h</div><div class="l">A messy 64-page PDF turned into a clean Excel database, 100% accuracy</div></div>
       <div class="stat"><div class="n">1-click</div><div class="l">Live P&amp;L, cashflow &amp; balance-sheet systems pulling from many sources</div></div>
       <div class="stat"><div class="n">500/day</div><div class="l">Bulk personalised emails sent straight from Excel via VBA automation</div></div>
     </div>
@@ -613,7 +708,7 @@
       </div>
       <div class="quote">
         <div class="qmark">&ldquo;</div>
-        <p>His attention to detail was remarkable — he captured and organised every data point and made my life so much easier. He is worth ten times more than what I paid. If you want someone who delivers high-quality work with a quick turnaround, look no further than JB.</p>
+        <p>His attention to detail was remarkable. He captured and organised every data point and made my life so much easier. He is worth ten times more than what I paid. If you want someone who delivers high-quality work with a quick turnaround, look no further than JB.</p>
         <div class="cite"><span class="av">★</span><span><b>Verified Upwork client</b><br><span class="verifytag">5.0 ★ review</span></span></div>
       </div>
     </div>
@@ -631,7 +726,7 @@
           <span>Excel</span><span>Google Sheets</span><span>Power Query</span><span>VBA / Macros</span><span>Power BI</span><span>SQL</span>
         </div>
         <div style="margin-top:18px; display:grid; gap:9px; font-size:14px; color:var(--ink-soft);">
-          <div><span style="color:var(--accent);font-weight:700;">✓</span> Microsoft Certified — Power BI Data Analyst (PL-300)</div>
+          <div><span style="color:var(--accent);font-weight:700;">✓</span> Microsoft Certified: Power BI Data Analyst (PL-300)</div>
           <div><span style="color:var(--accent);font-weight:700;">✓</span> 7+ years working with data</div>
           <div><span style="color:var(--accent);font-weight:700;">✓</span> Replies within a few hours</div>
           <div><span style="color:var(--accent);font-weight:700;">✓</span> English (native) · French (conversational)</div>
@@ -640,7 +735,7 @@
       <div class="about-copy">
         <span class="eyebrow" data-cell="F1">Who you'll work with</span>
         <h2>One specialist, not an agency.</h2>
-        <p>I'm a Microsoft-certified data specialist with 7+ years and 1,500+ hours building spreadsheet tools for 55 businesses — from one-off macros to full reporting systems. You work with me directly, start to finish, so nothing gets lost in a handoff.</p>
+        <p>I'm a Microsoft-certified data specialist with 7+ years and 1,500+ hours building spreadsheet tools for 55 businesses, from one-off macros to full reporting systems. You work with me directly, start to finish, so nothing gets lost in a handoff.</p>
         <p>My focus is narrow on purpose: I make Excel and Google Sheets do the boring work so you and your team don't have to. If automation won't actually save you time or money, I'll tell you on the first call.</p>
       </div>
     </div>
@@ -656,7 +751,7 @@
     <div class="faq-wrap">
       <details open>
         <summary>How much will my project cost? <span class="plus">+</span></summary>
-        <div class="ans">You get a single fixed price before any work starts — no hourly meter. Most builds land between $1,000 and $3,500 depending on complexity. Not sure where you fit? Start with a $299 Automation Audit and the fee comes off the build.</div>
+        <div class="ans">You get a single fixed price before any work starts. No hourly meter. Most builds land between $1,000 and $3,500 depending on complexity. Not sure where you fit? Start with a $299 Automation Audit and the fee comes off the build.</div>
       </details>
       <details>
         <summary>Do you work remotely / with clients outside the UK? <span class="plus">+</span></summary>
@@ -664,7 +759,7 @@
       </details>
       <details>
         <summary>How long does it take? <span class="plus">+</span></summary>
-        <div class="ans">An audit is delivered within a few days. Most builds take one to three weeks depending on scope — you'll get a firm timeline in your quote.</div>
+        <div class="ans">An audit is delivered within a few days. Most builds take one to three weeks depending on scope, and you'll get a firm timeline in your quote.</div>
       </details>
       <details>
         <summary>What if I don't know exactly what I need? <span class="plus">+</span></summary>
@@ -684,7 +779,7 @@
       <div>
         <span class="eyebrow" data-cell="H1">Let's talk</span>
         <h2>Tell me what's eating your time.</h2>
-        <p>Send a few details and I'll reply with honest thoughts on what can be automated and a ballpark price — usually within one working day.</p>
+        <p>Send a few details and I'll reply with honest thoughts on what can be automated and a ballpark price, usually within one working day.</p>
         <div class="cta-list">
           <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Free, no-obligation quote</div>
           <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> A straight answer on whether it's worth it</div>
@@ -694,7 +789,7 @@
           <div style="font-size:14px;color:var(--muted);margin-bottom:12px;">Prefer to talk it through first?</div>
           <a class="btn btn-ghost" id="callBtn" href="https://calendly.com/oludipejesumboj/30min" target="_blank" rel="noopener" style="width:100%;">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Book a free 15-min call
+            Book a free 30-min call
           </a>
           <p class="form-note" style="margin-top:10px;">Or <a href="tel:+447542313713" style="color:var(--accent);font-weight:600">call</a> / <a href="https://wa.me/447542313713" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">WhatsApp</a> me on <b style="color:var(--ink)">+44 7542 313713</b></p>
         </div>
@@ -715,15 +810,17 @@
             <option>Dashboard &amp; Reporting build</option>
             <option>Workflow Automation build</option>
             <option>Monthly Care Plan</option>
-            <option>Not sure yet — need advice</option>
+            <option>Not sure yet, need advice</option>
           </select>
         </div>
         <div>
           <label for="lf-msg">Briefly, what's the repetitive task?</label>
           <textarea id="lf-msg" name="message" placeholder="e.g. Every Monday we merge 3 CSV exports into a sales report by hand…"></textarea>
         </div>
-        <button class="btn btn-primary btn-lg" type="submit">Send &amp; get my quote</button>
-        <p class="form-note">Opens your email app to send — or email me directly at <a href="mailto:hello@workwithjesumbo.com" style="color:var(--accent);font-weight:600">hello@workwithjesumbo.com</a></p>
+        <input type="text" name="_gotcha" id="lf-gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
+        <button class="btn btn-primary btn-lg" type="submit" id="lf-submit">Send &amp; get my quote</button>
+        <p class="form-note" id="lf-status" role="status" aria-live="polite"></p>
+        <p class="form-note">Or email me directly at <a href="mailto:hello@workwithjesumbo.com" style="color:var(--accent);font-weight:600">hello@workwithjesumbo.com</a>. I never share your details, see the <a href="/privacy.html" style="color:var(--accent);font-weight:600">privacy policy</a>.</p>
       </form>
     </div>
   </div>
@@ -732,14 +829,16 @@
 <footer class="foot">
   <div class="wrap foot-inner">
     <div class="brand"><span class="glyph">fx</span> Jesumbo · Spreadsheet Automation</div>
-    <div>Excel · Google Sheets · Power Query · Automation — built to save you time.</div>
-    <div>© <span id="yr"></span> · <a href="#top">Back to top ↑</a></div>
+    <div>Excel · Google Sheets · Power Query · Automation. Built to save you time.</div>
+    <div><a href="/privacy.html">Privacy</a> · © <span id="yr"></span> Jesumbo · <a href="#top">Back to top ↑</a></div>
   </div>
 </footer>
 
 <script>
   (function () {
-    // theme toggle (per-viewer convenience; storage guarded)
+    var CFG = window.SITE_CONFIG || {};
+
+    /* ---- theme toggle (per-viewer convenience; storage guarded) ---- */
     var root = document.documentElement;
     var btn = document.getElementById('themeBtn');
     var saved = null;
@@ -750,37 +849,116 @@
       if (t) return t;
       return (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
     }
-    btn.addEventListener('click', function () {
+    if (btn) btn.addEventListener('click', function () {
       var next = current() === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
       try { localStorage.setItem('theme', next); } catch (e) {}
     });
 
-    // year
-    document.getElementById('yr').textContent = new Date().getFullYear();
+    /* ---- year ---- */
+    var yr = document.getElementById('yr');
+    if (yr) yr.textContent = new Date().getFullYear();
 
-    // fire a Meta "Lead" event when someone books a call (works once your Pixel is live)
+    function lead(where) { if (window.fbq) fbq('track', 'Lead', { content_name: where }); }
+
+    /* ---- booking a call counts as a lead ---- */
     var callBtn = document.getElementById('callBtn');
-    if (callBtn) callBtn.addEventListener('click', function () { if (window.fbq) fbq('track', 'Lead'); });
+    if (callBtn) callBtn.addEventListener('click', function () { lead('calendly'); });
 
-    // lead form -> mailto (no backend needed for the draft)
+    /* ---- enquiry form ---- */
     var form = document.getElementById('leadForm');
+    if (!form) return;
+    var statusEl = document.getElementById('lf-status');
+    var submitEl = document.getElementById('lf-submit');
+
+    function say(msg, bad) {
+      if (!statusEl) return;
+      statusEl.textContent = msg;
+      statusEl.style.color = bad ? '#b3261e' : 'var(--accent)';
+    }
+
+    function mailtoFallback(d) {
+      var body = 'Name: ' + d.name + '\n' + 'Email: ' + d.email + '\n' +
+                 'Interested in: ' + d.interest + '\n\n' + 'Task to automate:\n' + d.message;
+      window.location.href = 'mailto:hello@workwithjesumbo.com?subject=' +
+        encodeURIComponent('New enquiry: ' + d.interest) + '&body=' + encodeURIComponent(body);
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      if (window.fbq) fbq('track', 'Lead'); // counts the enquiry for your Facebook ads
-      var to = 'hello@workwithjesumbo.com'; // set up Cloudflare Email Routing to forward this to your inbox
-      var name = encodeURIComponent(document.getElementById('lf-name').value || '');
-      var email = document.getElementById('lf-email').value || '';
-      var interest = document.getElementById('lf-interest').value || '';
-      var msg = document.getElementById('lf-msg').value || '';
-      var subject = encodeURIComponent('New enquiry: ' + interest);
-      var body = encodeURIComponent(
-        'Name: ' + decodeURIComponent(name) + '\n' +
-        'Email: ' + email + '\n' +
-        'Interested in: ' + interest + '\n\n' +
-        'Task to automate:\n' + msg
-      );
-      window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
+
+      /* honeypot: bots fill hidden fields, people do not */
+      var pot = document.getElementById('lf-gotcha');
+      if (pot && pot.value) return;
+
+      var d = {
+        name: (document.getElementById('lf-name').value || '').trim(),
+        email: (document.getElementById('lf-email').value || '').trim(),
+        interest: document.getElementById('lf-interest').value || '',
+        message: (document.getElementById('lf-msg').value || '').trim()
+      };
+      if (!d.name || !d.email) { say('Please add your name and email so I can reply.', true); return; }
+
+      lead('form');
+
+      if (!CFG.FORM_ENDPOINT) { mailtoFallback(d); return; }
+
+      var payload = {
+        name: d.name,
+        email: d.email,
+        interest: d.interest,
+        message: d.message,
+        subject: 'New enquiry: ' + d.interest,
+        from_name: 'workwithjesumbo.com'
+      };
+      if (CFG.WEB3FORMS_KEY) payload.access_key = CFG.WEB3FORMS_KEY;
+
+      if (submitEl) { submitEl.disabled = true; submitEl.textContent = 'Sending...'; }
+      say('Sending...');
+
+      fetch(CFG.FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(function (r) {
+        if (!r.ok) throw new Error('bad status ' + r.status);
+        window.location.href = CFG.THANKS_URL || '/thanks.html';
+      }).catch(function () {
+        if (submitEl) { submitEl.disabled = false; submitEl.textContent = 'Send & get my quote'; }
+        say('That did not send. Opening your email app instead.', true);
+        mailtoFallback(d);
+      });
     });
   })();
 </script>
+
+<div class="cookiebar" id="cookiebar" hidden>
+  <p>This site uses cookies to measure how well my ads work. Nothing loads until you choose. See the <a href="/privacy.html">privacy policy</a>.</p>
+  <div class="cookiebar-btns">
+    <button class="btn btn-ghost" id="ck-no" type="button">Decline</button>
+    <button class="btn btn-primary" id="ck-yes" type="button">Accept</button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var c = window.SITE_CONFIG || {};
+    if (!c.PIXEL_ID || !c.REQUIRE_COOKIE_CONSENT) return;
+    var choice = null;
+    try { choice = localStorage.getItem('cookie-consent'); } catch (e) {}
+    if (choice === 'accepted' || choice === 'declined') return;
+    var bar = document.getElementById('cookiebar');
+    if (!bar) return;
+    bar.hidden = false;
+    function decide(v) {
+      try { localStorage.setItem('cookie-consent', v); } catch (e) {}
+      bar.hidden = true;
+      if (v === 'accepted' && window.loadPixel) window.loadPixel();
+    }
+    document.getElementById('ck-yes').addEventListener('click', function () { decide('accepted'); });
+    document.getElementById('ck-no').addEventListener('click', function () { decide('declined'); });
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thanks, your enquiry is in | Jesumbo</title>
+<meta name="description" content="Your enquiry has been received. I reply within one working day.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://workwithjesumbo.com/thanks.html">
+<meta name="theme-color" content="#0B6E57" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A100E" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B6E57'/%3E%3Ctext x='32' y='44' font-family='monospace' font-size='30' font-weight='700' fill='%23fff' text-anchor='middle'%3Efx%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    /* light palette: cool neutral biased toward emerald accent */
+    --bg: #F3F6F4;
+    --surface: #FFFFFF;
+    --surface-2: #EEF3F0;
+    --ink: #0E1A16;
+    --ink-soft: #2C3A35;
+    --muted: #56675F;
+    --hairline: #DDE6E1;
+    --hairline-strong: #C7D4CD;
+    --accent: #0B6E57;
+    --accent-strong: #084C3C;
+    --accent-tint: #E4F1EC;
+    --gold: #B0762F;          /* warm highlight, used only for the "hours saved" figure */
+    --grid-line: rgba(11,110,87,0.06);
+    --shadow: 0 1px 2px rgba(14,26,22,.04), 0 8px 30px rgba(14,26,22,.06);
+    --shadow-lift: 0 2px 4px rgba(14,26,22,.05), 0 18px 50px rgba(14,26,22,.12);
+    --radius: 14px;
+    --radius-sm: 9px;
+    --maxw: 1120px;
+  }
+  :root:not([data-theme="light"]) {
+    @media (prefers-color-scheme: dark) {
+      --bg: #0A100E;
+      --surface: #121B18;
+      --surface-2: #17221E;
+      --ink: #EAF1EE;
+      --ink-soft: #C6D3CD;
+      --muted: #8DA098;
+      --hairline: #223029;
+      --hairline-strong: #2E3F37;
+      --accent: #37C79E;
+      --accent-strong: #5FD8B5;
+      --accent-tint: #12241E;
+      --gold: #E0A458;
+      --grid-line: rgba(55,199,158,0.07);
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 34px rgba(0,0,0,.5);
+      --shadow-lift: 0 2px 6px rgba(0,0,0,.5), 0 22px 60px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0A100E;
+    --surface: #121B18;
+    --surface-2: #17221E;
+    --ink: #EAF1EE;
+    --ink-soft: #C6D3CD;
+    --muted: #8DA098;
+    --hairline: #223029;
+    --hairline-strong: #2E3F37;
+    --accent: #37C79E;
+    --accent-strong: #5FD8B5;
+    --accent-tint: #12241E;
+    --gold: #E0A458;
+    --grid-line: rgba(55,199,158,0.07);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 34px rgba(0,0,0,.5);
+    --shadow-lift: 0 2px 6px rgba(0,0,0,.5), 0 22px 60px rgba(0,0,0,.6);
+  }
+
+  .skip { position:absolute; left:-9999px; top:0; z-index:100; background:var(--accent); color:#fff; padding:12px 18px; border-radius:0 0 10px 0; font-weight:600; }
+  .skip:focus { left:0; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 {
+    font-family: "Bricolage Grotesque", "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    margin: 0;
+    color: var(--ink);
+  }
+  p { margin: 0; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+  .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+  .eyebrow {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 12.5px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .eyebrow::before {
+    content: attr(data-cell);
+    color: var(--muted);
+    background: var(--surface-2);
+    border: 1px solid var(--hairline);
+    border-radius: 5px;
+    padding: 2px 6px;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+  }
+  section { padding: 92px 0; position: relative; }
+  @media (max-width: 720px){ section { padding: 64px 0; } body { font-size: 16px; } }
+
+  .btn { display:inline-flex; align-items:center; justify-content:center; gap:9px;
+    font-family:"Hanken Grotesk",sans-serif; font-weight:600; font-size:16px;
+    padding:14px 24px; border-radius:999px; cursor:pointer; border:1px solid transparent;
+    transition: transform .15s ease, box-shadow .2s ease; }
+  .btn-primary { background:var(--accent); color:#fff; box-shadow:0 6px 18px rgba(11,110,87,.28); }
+  :root[data-theme="dark"] .btn-primary { color:#05130E; }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .btn-primary{ color:#05130E; } }
+  .btn-primary:hover { transform: translateY(-2px); }
+  .btn-ghost { background:transparent; color:var(--ink); border-color:var(--hairline-strong); }
+  .btn-ghost:hover { border-color:var(--accent); color:var(--accent); }
+  .btn:focus-visible, a:focus-visible { outline:3px solid var(--accent); outline-offset:2px; border-radius:8px; }
+  .page { max-width: 760px; margin:0 auto; padding: 0 24px 90px; }
+  .topbar { border-bottom:1px solid var(--hairline); margin-bottom:54px; }
+  .topbar-in { max-width:760px; margin:0 auto; padding:0 24px; height:66px; display:flex; align-items:center; justify-content:space-between; }
+  .brand { display:flex; align-items:center; gap:11px; font-weight:700; font-family:"Bricolage Grotesque",sans-serif; font-size:18px; }
+  .brand .glyph { width:30px; height:30px; border-radius:7px; flex:none; background:var(--accent); color:#fff;
+    display:grid; place-items:center; font-family:"JetBrains Mono",monospace; font-weight:600; font-size:14px; }
+  :root[data-theme="dark"] .brand .glyph { color:#05130E; }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .brand .glyph{ color:#05130E; } }
+  .topbar a.back { color:var(--muted); font-size:15px; font-weight:500; }
+  .topbar a.back:hover { color:var(--ink); }
+  h1.title { font-size: clamp(32px,5vw,46px); }
+  .lede { color:var(--muted); margin-top:16px; font-size:18px; }
+  .updated { font-family:"JetBrains Mono",monospace; font-size:12.5px; color:var(--muted);
+    letter-spacing:.06em; text-transform:uppercase; }
+  h2.sec { font-size:22px; margin-top:44px; }
+  .page p.body { color:var(--ink-soft); margin-top:14px; font-size:16.5px; }
+  .page ul { color:var(--ink-soft); font-size:16.5px; padding-left:22px; margin-top:14px; }
+  .page li { margin-top:9px; }
+  .page a.inline { color:var(--accent); font-weight:600; }
+  .note { background:var(--surface); border:1px solid var(--hairline); border-radius:var(--radius);
+    padding:20px 24px; margin-top:22px; box-shadow:var(--shadow); font-size:15.5px; color:var(--ink-soft); }
+  footer.foot { border-top:1px solid var(--hairline); padding:34px 0; }
+  .foot-in { max-width:760px; margin:0 auto; padding:0 24px; display:flex; flex-wrap:wrap;
+    gap:14px; justify-content:space-between; color:var(--muted); font-size:14px; }
+  .foot-in a { color:var(--muted); }
+  .foot-in a:hover { color:var(--ink); }
+</style>
+</head>
+
+<body>
+<div class="topbar"><div class="topbar-in">
+  <a class="brand" href="/"><span class="glyph">fx</span><span>Jesumbo&nbsp;<span style="color:var(--muted);font-weight:500">· Automation</span></span></a>
+  <a class="back" href="/">← Back to site</a>
+</div></div>
+
+<main class="page" style="text-align:center; padding-top:20px;">
+  <div style="width:76px;height:76px;border-radius:22px;background:var(--accent-tint);color:var(--accent);display:grid;place-items:center;margin:0 auto 26px;">
+    <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+  </div>
+  <h1 class="title">Thanks, that came through.</h1>
+  <p class="lede" style="max-width:52ch;margin-left:auto;margin-right:auto;">I read every enquiry myself and reply with honest thoughts on what can be automated plus a ballpark price, usually within one working day.</p>
+
+  <div class="note" style="text-align:left;max-width:520px;margin:34px auto 0;">
+    <b>While you wait</b>
+    <ul style="margin-top:12px;">
+      <li>Have a rough idea of how long the task takes today. It makes the quote far more accurate.</li>
+      <li>If you can, keep a sample file handy. Even a messy one helps.</li>
+      <li>Check your spam folder if nothing lands by tomorrow, then email me directly.</li>
+    </ul>
+  </div>
+
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px;">
+    <a class="btn btn-primary" href="https://calendly.com/oludipejesumboj/30min" target="_blank" rel="noopener">Book a free 30-min call</a>
+    <a class="btn btn-ghost" href="/">Back to the site</a>
+  </div>
+  <p style="margin-top:22px;font-size:14.5px;color:var(--muted);">Or reach me on <a class="inline" href="tel:+447542313713">+44 7542 313713</a> and <a class="inline" href="https://wa.me/447542313713" target="_blank" rel="noopener">WhatsApp</a>.</p>
+</main>
+
+<footer class="foot"><div class="foot-in">
+  <div>Jesumbo · Spreadsheet Automation</div>
+  <div><a href="/">Home</a> · <a href="/privacy.html">Privacy</a> · <a href="mailto:hello@workwithjesumbo.com">hello@workwithjesumbo.com</a></div>
+</div></footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    if (saved === 'dark' || saved === 'light') root.setAttribute('data-theme', saved);
+  })();
+</script>
+</body>
+</html>
