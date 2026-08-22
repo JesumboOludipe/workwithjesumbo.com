@@ -291,10 +291,13 @@
 
   .quote-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:20px; margin-top:22px; }
   @media (max-width: 860px){ .quote-grid { grid-template-columns:1fr; } }
-  .quote { border:1px dashed var(--hairline-strong); border-radius: var(--radius); padding: 22px; background: color-mix(in srgb, var(--surface) 60%, transparent); }
-  .quote .qmark { font-family:"Bricolage Grotesque",serif; font-size: 34px; color: var(--hairline-strong); line-height:1; }
-  .quote p { color:var(--muted); font-size:14.5px; font-style:italic; margin-top:6px; }
-  .quote .edit { display:block; margin-top:14px; font-family:"JetBrains Mono",monospace; font-size:11.5px; color:var(--accent); letter-spacing:.03em; }
+  .quote { border:1px solid var(--hairline); border-radius: var(--radius); padding: 24px; background: var(--surface); box-shadow: var(--shadow); display:flex; flex-direction:column; }
+  .quote .qmark { font-family:"Bricolage Grotesque",serif; font-size: 42px; color: var(--accent); line-height:.5; height:22px; }
+  .quote p { color:var(--ink-soft); font-size:15px; margin-top:12px; flex:1; }
+  .quote .cite { display:flex; align-items:center; gap:11px; margin-top:18px; padding-top:15px; border-top:1px solid var(--hairline); }
+  .quote .cite b { color:var(--ink); font-weight:600; font-size:14px; }
+  .quote .cite .av { width:32px;height:32px;border-radius:50%;background:var(--accent-tint);color:var(--accent);display:grid;place-items:center;font-weight:700;font-size:14px;font-family:"Bricolage Grotesque",sans-serif;flex:none;}
+  .quote .verifytag { font-family:"JetBrains Mono",monospace; font-size:11px; color:var(--accent); letter-spacing:.02em; }
 
   /* about */
   .about-grid { display:grid; grid-template-columns: 1fr 1.3fr; gap: 46px; align-items:center; }
@@ -360,7 +363,7 @@
   .buildnote b { font-weight:600; }
 </style>
 
-<div class="buildnote">DRAFT · swap the <b>[bracketed]</b> bits before launch — your email, phone, Calendly link, real client reviews, and your Meta Pixel ID (see the note just below in the code)</div>
+<div class="buildnote">Before ads: turn on Cloudflare <b>Email Routing</b> so hello@workwithjesumbo.com reaches your inbox, and add your <b>Meta Pixel ID</b> (see the note just below in the code)</div>
 
 <!-- =====================================================================
      META (FACEBOOK) PIXEL  —  READY FOR ADS
@@ -418,7 +421,8 @@
           <span class="badge"><b>Top Rated Plus</b> on Upwork</span>
           <span class="badge"><b>100%</b> job success</span>
           <span class="badge"><span class="star">★</span> 5.0 · 30 reviews</span>
-          <span class="badge"><b>55</b> projects · <b>1,500+</b> hrs</span>
+          <span class="badge"><b>Microsoft Certified</b> · PL-300</span>
+          <span class="badge"><b>7+ yrs</b> · 55 projects</span>
         </div>
       </div>
 
@@ -530,7 +534,7 @@
         <span class="tag">Done-for-you build</span>
         <h3>Dashboard &amp; Reporting</h3>
         <div class="price"><span class="from">from $</span>1,000</div>
-        <p class="blurb">Turn your raw exports into a live dashboard or report that refreshes itself — built with Power Query and Excel.</p>
+        <p class="blurb">Turn your raw exports into a live dashboard or report that refreshes itself — built in Excel, Google Sheets or Power BI with Power Query.</p>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Automated data cleaning &amp; consolidation</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> One-click refresh — no more copy-paste</li>
@@ -580,22 +584,37 @@
       <span class="txt"><b>Top Rated Plus</b> — Upwork's highest freelancer tier, held by a small fraction of freelancers.</span>
       <a href="https://www.upwork.com/freelancers/jbjb" target="_blank" rel="noopener">Read the reviews on Upwork →</a>
     </div>
+    <div class="verified" style="margin-top:14px;">
+      <span class="stars" style="color:var(--accent);font-size:17px;">✔</span>
+      <span class="txt"><b>Microsoft Certified</b> — Power BI Data Analyst (PL-300) &amp; Azure Fundamentals (AZ-900), with 7+ years working with data every day.</span>
+    </div>
+
+    <div style="margin-top:46px;">
+      <span class="eyebrow" data-cell="E7">Recent results</span>
+    </div>
+    <div class="stat-grid" style="margin-top:18px;">
+      <div class="stat"><div class="n">80%↓</div><div class="l">Manual reconciliation time cut with automated, one-click-refresh reporting</div></div>
+      <div class="stat"><div class="n">&lt;24h</div><div class="l">A messy 64-page PDF turned into a clean Excel database — 100% accuracy</div></div>
+      <div class="stat"><div class="n">1-click</div><div class="l">Live P&amp;L, cashflow &amp; balance-sheet systems pulling from many sources</div></div>
+      <div class="stat"><div class="n">500/day</div><div class="l">Bulk personalised emails sent straight from Excel via VBA automation</div></div>
+    </div>
+    <p style="margin-top:16px;font-size:14.5px;color:var(--muted);">Want to see it in action? <a href="https://www.loom.com/share/55748a943492443484506923d97df185" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">Watch a 2-min automation demo →</a></p>
 
     <div class="quote-grid">
       <div class="quote">
         <div class="qmark">&ldquo;</div>
-        <p>[ Paste a real client quote from your Upwork reviews here — one about time or money saved works best. ]</p>
-        <span class="edit mono">// swap this before going live</span>
+        <p>JB completely transformed our Excel system from slow, difficult-to-maintain workbooks to fast, professional solutions our team now relies on every day. Beyond building what was asked, he found better ways to structure our data and improved performance. I wouldn't hesitate to recommend JB.</p>
+        <div class="cite"><span class="av">S</span><span><b>Samuel A.</b><br><span class="verifytag">Verified Upwork client</span></span></div>
       </div>
       <div class="quote">
         <div class="qmark">&ldquo;</div>
-        <p>[ A second real review — ideally one that names a specific result or how easy you were to work with. ]</p>
-        <span class="edit mono">// swap this before going live</span>
+        <p>JB delivered professional Excel and Power BI dashboards and automated our reporting effectively. He was reliable, detail-oriented, and easy to work with. Look forward to working with him again.</p>
+        <div class="cite"><span class="av">S</span><span><b>Samuel O.</b><br><span class="verifytag">Verified Upwork client</span></span></div>
       </div>
       <div class="quote">
         <div class="qmark">&ldquo;</div>
-        <p>[ A third real review — a returning client or a big project is great social proof. ]</p>
-        <span class="edit mono">// swap this before going live</span>
+        <p>His attention to detail was remarkable — he captured and organised every data point and made my life so much easier. He is worth ten times more than what I paid. If you want someone who delivers high-quality work with a quick turnaround, look no further than JB.</p>
+        <div class="cite"><span class="av">★</span><span><b>Verified Upwork client</b><br><span class="verifytag">5.0 ★ review</span></span></div>
       </div>
     </div>
   </div>
@@ -609,14 +628,20 @@
         <h3>Jesumbo O.</h3>
         <div class="role">Spreadsheet Automation Specialist · Reading, UK</div>
         <div class="toollist">
-          <span>Excel</span><span>Power Query</span><span>VBA / Macros</span><span>Google Sheets</span><span>Apps Script</span>
+          <span>Excel</span><span>Google Sheets</span><span>Power Query</span><span>VBA / Macros</span><span>Power BI</span><span>SQL</span>
+        </div>
+        <div style="margin-top:18px; display:grid; gap:9px; font-size:14px; color:var(--ink-soft);">
+          <div><span style="color:var(--accent);font-weight:700;">✓</span> Microsoft Certified — Power BI Data Analyst (PL-300)</div>
+          <div><span style="color:var(--accent);font-weight:700;">✓</span> 7+ years working with data</div>
+          <div><span style="color:var(--accent);font-weight:700;">✓</span> Replies within a few hours</div>
+          <div><span style="color:var(--accent);font-weight:700;">✓</span> English (native) · French (conversational)</div>
         </div>
       </div>
       <div class="about-copy">
         <span class="eyebrow" data-cell="F1">Who you'll work with</span>
         <h2>One specialist, not an agency.</h2>
-        <p>I've spent 1,500+ hours building spreadsheet tools for 55 businesses — from one-off macros to full reporting systems. You work with me directly, start to finish, so nothing gets lost in a handoff.</p>
-        <p>My focus is narrow on purpose: I make spreadsheets do the boring work so you and your team don't have to. If automation won't actually save you time or money, I'll tell you on the first call.</p>
+        <p>I'm a Microsoft-certified data specialist with 7+ years and 1,500+ hours building spreadsheet tools for 55 businesses — from one-off macros to full reporting systems. You work with me directly, start to finish, so nothing gets lost in a handoff.</p>
+        <p>My focus is narrow on purpose: I make Excel and Google Sheets do the boring work so you and your team don't have to. If automation won't actually save you time or money, I'll tell you on the first call.</p>
       </div>
     </div>
   </div>
@@ -667,11 +692,11 @@
         </div>
         <div style="margin-top:26px; padding-top:22px; border-top:1px solid var(--hairline);">
           <div style="font-size:14px;color:var(--muted);margin-bottom:12px;">Prefer to talk it through first?</div>
-          <a class="btn btn-ghost" id="callBtn" href="https://calendly.com/your-link" target="_blank" rel="noopener" style="width:100%;">
+          <a class="btn btn-ghost" id="callBtn" href="https://calendly.com/oludipejesumboj/30min" target="_blank" rel="noopener" style="width:100%;">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             Book a free 15-min call
           </a>
-          <p class="form-note" style="margin-top:10px;">Or call / WhatsApp me on <b style="color:var(--ink)">[your number]</b></p>
+          <p class="form-note" style="margin-top:10px;">Or <a href="tel:+447542313713" style="color:var(--accent);font-weight:600">call</a> / <a href="https://wa.me/447542313713" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">WhatsApp</a> me on <b style="color:var(--ink)">+44 7542 313713</b></p>
         </div>
       </div>
       <form class="lead" id="leadForm">
@@ -698,7 +723,7 @@
           <textarea id="lf-msg" name="message" placeholder="e.g. Every Monday we merge 3 CSV exports into a sales report by hand…"></textarea>
         </div>
         <button class="btn btn-primary btn-lg" type="submit">Send &amp; get my quote</button>
-        <p class="form-note">Opens your email app to send — or reach me directly at <a href="mailto:oludipejesumboj@gmail.com" style="color:var(--accent);font-weight:600">[your-email@domain.com]</a></p>
+        <p class="form-note">Opens your email app to send — or email me directly at <a href="mailto:hello@workwithjesumbo.com" style="color:var(--accent);font-weight:600">hello@workwithjesumbo.com</a></p>
       </form>
     </div>
   </div>
@@ -743,7 +768,7 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (window.fbq) fbq('track', 'Lead'); // counts the enquiry for your Facebook ads
-      var to = 'oludipejesumboj@gmail.com'; // <-- swap for your business email
+      var to = 'hello@workwithjesumbo.com'; // set up Cloudflare Email Routing to forward this to your inbox
       var name = encodeURIComponent(document.getElementById('lf-name').value || '');
       var email = document.getElementById('lf-email').value || '';
       var interest = document.getElementById('lf-interest').value || '';
